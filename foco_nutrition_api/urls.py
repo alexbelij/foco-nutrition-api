@@ -5,6 +5,8 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^(?P<month>\d+)/(?P<day>\d+)/$', name='access'),
+
     # Examples:
     # url(r'^$', 'foco_nutrition_api.views.home', name='home'),
     # url(r'^foco_nutrition_api/', include('foco_nutrition_api.foo.urls')),
