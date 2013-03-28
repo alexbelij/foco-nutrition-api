@@ -5,7 +5,7 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^api/(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d+)/$', 'webapp.views.api', name='api'),
+    url(r'^api/(?P<year>\d{4})/(?P<month>\d+)/(?P<day>\d+)/$', 'webapp.views.api', name='api'),
     
 
     # Examples:
