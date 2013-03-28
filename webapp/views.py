@@ -1,4 +1,7 @@
 # Create your views here.
 
-def access(month=None, day=None):
-    print "hello"
+from django.shortcuts import render_to_response
+
+def api(request, month=None, day=None, year=None):
+    return render_to_response('api.html')
+
