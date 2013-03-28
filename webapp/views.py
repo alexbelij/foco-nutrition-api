@@ -18,7 +18,9 @@ def api(request, month=None, day=None, year=None):
 
     # able to change menu dates and access food listing for each date. 
     parameters = {"service":"","method":"get_recipes_for_menumealdate","id":11,"params":[{"sid":"DDS.03cb6fca95f4cbea2245365827038394"},"{\"menu_id\":\"27\",\"meal_id\":\"3\",\"remoteProcedure\":\"get_recipes_for_menumealdate\",\"day\":"+day+",\"month\":"+month+",\"year\":"+year+",\"use_menu_query\":true,\"order_by\":\"pubgroup-alpha\",\"cache\":true}"]}
-    parameters2 = {"service":"","method":"get_recipes_for_menumealdate","id":11,"params":[{"sid":"DDS.03cb6fca95f4cbea2245365827038394"},"{\"menu_id\":\"27\",\"meal_id\":\"3\",\"remoteProcedure\":\"get_recipes_for_menumealdate\",\"day\":27,\"month\":3,\"year\":2013,\"use_menu_query\":true,\"order_by\":\"pubgroup-alpha\",\"cache\":true}"]}
+
+    # true parameters
+    #parameters2 = {"service":"","method":"get_recipes_for_menumealdate","id":11,"params":[{"sid":"DDS.03cb6fca95f4cbea2245365827038394"},"{\"menu_id\":\"27\",\"meal_id\":\"3\",\"remoteProcedure\":\"get_recipes_for_menumealdate\",\"day\":27,\"month\":3,\"year\":2013,\"use_menu_query\":true,\"order_by\":\"pubgroup-alpha\",\"cache\":true}"]}
     
 
     # Beef Casserole code
@@ -44,6 +46,8 @@ def api(request, month=None, day=None, year=None):
     response = urllib2.urlopen(req)
 
     read =  response.read()
+
+    # test code switch # 
     #read = parameters
     #other = parameters2
 
