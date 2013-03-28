@@ -56,3 +56,7 @@ def api(request, month=None, day=None, year=None):
         
     return render_to_response('api.html', {'read':read,})
 
+# take in month, day, year and output JSON of each menu item's nutrition facts
+def algorithm(month, day, year):
+    pass
+
