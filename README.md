@@ -15,3 +15,8 @@ http://localhost:8000/api/year/month/day/
 
 So for example:
 http://localhost:8000/api/2013/3/28/
+
+
+===
+To do:
+ * Expand to breakfast / lunch /dinner
