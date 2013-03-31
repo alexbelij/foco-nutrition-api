@@ -65,13 +65,43 @@ def api(request, month=None, day=None, year=None):
         mmr_rank = recipe[1][4] 
         #print mmr_rank
 
+        # 3/24
+            # mm_id
+                # lunch:  9772
+
+        # 3/25
+            # mm_id
+                # lunch:  9750
+        # 3/26 
+            # mm_id
+                # lunch:  9756
+
+        # 3/27
+            # mm_id
+                # lunch:  9786
+        # 3/28
+            # mm_id
+                # morning:9731
+                # lunch:  9784
+                # dinner: 9754
+        # 3/29 
+            # mm_id  
+                # morning: 9769
+                # lunch:   9745
+                # dinner:  9770
+            # mmr_rank   no change..
+
         # 3/30 
-            # id = 26
-            # mm_id = 9773
-            # mmr_rank   no change..
-        # 3/29 lunch
-            # mm_id  = 9745
-            # mmr_rank   no change..
+            # mm_id
+                # morning: 9743
+                # lunch:   9773 
+                # dinner:  9729
+        # 3/31
+            # mm_id
+                # lunch:   9764
+
+
+
             
 
         ## parameters for request
@@ -87,9 +117,9 @@ def api(request, month=None, day=None, year=None):
 
         recipe_nutrients = make_request(nutrient_parameters)
 
-        print recipe_nutrients
-
+        read = recipe_nutrients
         
+
     return render_to_response('api.html', {'read':read,})
 
 # make the request
